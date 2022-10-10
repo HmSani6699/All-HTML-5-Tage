@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(229, 238, 171);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin-left: 15px;
+    text-align: center;
+    color: orange;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+main section {
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+main aside {
+    background-color: cornflowerblue;
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    text-align: center;
+}

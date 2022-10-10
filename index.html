@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>All Html 5 Tage Revition</title>
+    <style>
+        #conteiner {
+            width: 60%;
+            float: left;
+        }
+
+        aside {
+            float: left;
+            width: 30%;
+            background-color: cadetblue;
+            padding: 10px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid gray;
+        }
+
+        .table11 {
+            border-collapse: collapse;
+        }
+
+        mark {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>All HTML 5 Tage</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+    </table>
+
+    <hr>
+    <table>
+        <tr>
+
+            <th>Id</th>
+            <th>Name</th>
+            <th>age</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td rowspan="2">101</td>
+            <td>Saddam</td>
+            <td colspan="2"
+                style="text-align: center;">18
+            </td>
+            <!-- <td>Raoudga</td> -->
+        </tr>
+        <tr>
+            <!-- <td>102</td> -->
+            <td>Alamin</td>
+            <td>14</td>
+            <td>Raoudga</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Saddam</td>
+            <!-- <td>18</td> -->
+            <td colspan="2"
+                style="text-align:center ;">
+                Raoudga</td>
+        </tr>
+    </table>
+
+    <hr>
+    <audio controls>
+        <source src="audio/audio-2.mp3"
+            type="audio/mp3">
+    </audio>
+
+
+    <hr>
+
+    <p> <samp>tomi koi aso </samp> </p>
+    <p>Ami apkunmda asi</p>
+
+    <hr>
+    <s>Ami vallo nei tomi shara</s>
+    <del>Tomi kemo aso Amy chara</del>
+    <hr>
+    <p>progress: <progress value="90"
+            max="100"></progress>%
+    </p>
+
+    <hr>
+    <pre>
+    ami 
+       vallo
+            asi
+               tomi 
+                   kemon
+                        aso
+                   ami
+               vallo
+            asi
+       tomar
+    nmae
+</pre>
+
+    <hr>
+
+    <picture>
+        <source media="(min-width: 1024px)"
+            srcset="sani.jpg">
+        <source media="(max-width: 768px)"
+            srcset="test.jpg">
+        <img src="gift.jpg" alt="Banner">
+    </picture>
+
+    <hr>
+    <form
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="100">
+        +
+        <input type="number" id="b" value="2">
+        =
+        <output name="x" for="a b"></output>
+    </form>
+    <hr>
+    <label for="group"></label>
+    <select id="group">
+        <optgroup label=" A">
+            <option value="Babu">Babu</option>
+            <option value="Jeli">Jeli</option>
+        </optgroup>
+        <optgroup label="B">
+            <option value="sani">Sani</option>
+            <option value="Adiba">Adiba</option>
+        </optgroup>
+        <optgroup label="C">
+            <option value="Romjan">Romjan</option>
+            <option value="Nadia">Nadia</option>
+        </optgroup>
+    </select>
+
+    <hr>
+
+    <label for="complet">Cource Complite</label>
+    <meter id="complet" value="9" min="0"
+        max="10"></meter>
+    <hr>
+    <label for="Mark">Your Mark</label>
+    <meter id="Mark" value="70" min="0" max="100">
+    </meter>
+    <p>70%</p>
+
+    <h4>I love my <mark>Allah</mark>
+    </h4>
+    <hr>
+    <img src="sani.jpg" alt="sani.jpg"
+        usemap="#image-map">
+    <map name="image-map">
+        <area target="_blank" alt="Porgapoti"
+            title="Ami google jabo"
+            href="https://www.image-map.net/"
+            coords="788,394,821,422,877,428,883,372,899,317,833,300,810,328,783,278,744,272,722,317,727,361"
+            shape="poly">
+
+    </map>
+    <hr>
+    <a href="https://www.youtube.com/">ami</a>
+    <iframe src="https://www.youtube.com/"
+        frameborder="1"></iframe>
+    <hr>
+    <figure>
+        <img src="gift.jpg" alt="Gift.jpg"
+            width="300px">
+        <figcaption>Parsonal Gift Box</figcaption>
+    </figure>
+
+    <hr>
+    <figure>
+        <img src="sani.jpg" alt="" width="300px">
+        <figcaption>H.M Sani ,Md: Sofone ,
+            Mis:Ayesa H.M Sani ,Md: Sofone ,
+            Mis:Ayesa</figcaption>
+    </figure>
+    <hr>
+    <fieldset>
+        <legend>YourAddress</legend>
+        <label for="ristname">Frist Name</label>
+        <input type="text" name="name"
+            id="ristname"
+            placeholder="enter your name">
+        <br>
+        <br>
+        <label for="lastname">last Name</label>
+        <input type="password" name="password"
+            id="lastname"
+            placeholder="enter your password">
+        <br><br>
+    </fieldset>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email"
+        placeholder="enter your email">
+    <br><br>
+    <fieldset>
+        <legend>Ami Tomar Info Jante Cai</legend>
+        <h1>Amar Info</h1>
+        <p>ami vallo asi </p>
+        <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dolore, asperiores
+            perspiciatis soluta quas tempore rem
+            magni odio quia culpa exercitationem.
+        </p>
+    </fieldset>
+
+    <hr>
+    <embed src="test.jpg" type="image/jpg"
+        width="300px">
+    <hr>
+    <p><em>Lorem ipsum dolor sit amet.</em></p>
+    <p>Amar sonar bangla ami tomay <em>vallo </em>
+        basi</p>
+    <hr>
+    <dialog open="">
+        <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Assumenda officiis
+            eaque consequuntur, impedit laborum
+            esse.</p>
+    </dialog>
+    <hr>
+    <p>the <dfn
+            title="Hiper text murquap leng">HTML</dfn>
+        is the publishing of
+        the World
+        Wide Web</p>
+    <hr>
+    <details>
+        <summary>My info</summary>
+        <h2>ami Sadiq</h2>
+    </details>
+    <details>
+        <summary>My all informetion</summary>
+        <h2>My Name Hm Sadiqur Rahman sani</h2>
+        <p>amar nam sai amr age 18 ami vortomae
+            pakunda madrasay job kori.amar baba
+            beche nei. amma asen .and boro vai
+            asen</p>
+    </details>
+    <hr>
+    <p>Ami <del>pakunda</del> madrasay job kori
+    </p>
+
+    <p>amar sonar <ins>bangla</ins> ami tmay
+        <del>vallo</del>
+        basi
+    </p>
+
+    <hr>
+    <dl>
+        <dt>Ji Ami Tomake Chini .</dt>
+        <dd>Tomi ki Amake Chino ?Tomi ki Amake
+            Chino ?Tomi ki Amake Chino ?Tomi ki
+            Amake Chino ?Tomi ki Amake Chino ?Tomi
+            ki Amake Chino ?Tomi ki Amake Chino
+            ?Tomi ki Amake Chino ?Tomi ki Amake
+            Chino ?</dd>
+        <dt>Tomi ki Bat khicho</dt>
+        <dd>
+            omi ki Amake Chino ?Tomi ki Amake
+            Chino ?Tomi ki Amake Chino ?Tomi ki
+            Amake Chino ?Tomi ki Amake Chino ?Tomi
+            ki Amake Chino ?Tomi ki Amake Chino
+            ?Tomi ki Amake Chino ?Tomi ki Amake
+            Chino ?
+        </dd>
+    </dl>
+    <hr>
+    <input type="text" list="namelist">
+    <datalist id="namelist">
+        <option value="Hm Sani"></option>
+        <option value="Hm Hasib"></option>
+        <option value="Hm thalha"></option>
+        <option value="Hm Rifat"></option>
+        <option value="Hm Mohbob"></option>
+        <option value="Hm Moinul"></option>
+    </datalist>
+    <br><br><br>
+    <input type="text" list="lodeData">
+    <datalist id="lodeData">
+        <option value="Bangladesh"></option>
+        <option value="kholna"></option>
+        <option value="Borisal"></option>
+        <option value="RongPur"></option>
+        <option value="Rajsahi"></option>
+    </datalist>
+    <hr>
+    <table class="table11">
+        <caption>Ami Table Banabo</caption>
+        <colgroup>
+            <col
+                style="background-color: yellow;">
+            <col span="2"
+                style="background-color: rgb(71, 71, 137); color: white;">
+            <col
+                style="background-color: rgb(133, 91, 91);">
+        </colgroup>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Lcation</th>
+            <th>Id</th>
+        </tr>
+        <tr>
+            <td>Sani</td>
+            <td>18</td>
+            <td>Pakunda</td>
+            <td>101</td>
+        </tr>
+        <tr>
+            <td>Raju</td>
+            <td>19</td>
+            <td>Pakunda</td>
+            <td>102</td>
+        </tr>
+        <tr>
+            <td>Apu</td>
+            <td>22</td>
+            <td>Pakunda</td>
+            <td>103</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h3>Computer code</h3>
+    <p>Ami <code>vallo</code> asi tomi kemon aso
+    </p>
+    <hr>
+    <h1>cite</h1>
+    <p>Lorem ipsum <cite>dolor</cite> sit amet
+        consectetur
+        adipisicing elit. Id, eum!</p>
+    <p>Lorem ipsum dolor sit amet
+        <cite>consectetur</cite>
+        adipisicing elit. Id, eum!
+    </p>
+    <hr>
+    <h2>border-collapse: collapse:</h2>
+    <table class="table11">
+        <caption>Ami Table Banabo</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Lcation</th>
+            <th>Id</th>
+        </tr>
+        <tr>
+            <td>Sani</td>
+            <td>18</td>
+            <td>Pakunda</td>
+            <td>101</td>
+        </tr>
+        <tr>
+            <td>Raju</td>
+            <td>19</td>
+            <td>Pakunda</td>
+            <td>102</td>
+        </tr>
+        <tr>
+            <td>Apu</td>
+            <td>22</td>
+            <td>Pakunda</td>
+            <td>103</td>
+        </tr>
+    </table>
+
+    <hr>
+    <blockquote>
+        <h3>Ami sonargayer pola</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Quisquam fuga labore
+            eligendi cupiditate alias maiores
+            perferendis esse. Eos, debitis
+            voluptas. Velit, perferendis tempora.
+            Culpa, nisi.</p>
+    </blockquote>
+
+    <hr>
+    <p>I Love My Allah</p>
+
+    <p><bdo dir="rtl">I Love My Allah</bdo></p>
+    <hr>
+    <audio controls
+        src="audio/audio-1.mp3"></audio>
+    <audio controls
+        src="audio/audio-2.mp3"></audio>
+    <audio controls
+        src="audio/audio-3.mp3"></audio>
+    <hr>
+    <section id="conteiner">
+        <article>
+            <h1>Aboute me</h1>
+            <p>Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Nam obcaecati,
+                maiores voluptate suscipit fugiat
+                debitis incidunt ullam cumque
+                doloremque cum esse natus placeat
+                praesentium facere fuga alias ea
+                sunt
+                quod. Nulla aspernatur possimus
+                iure
+                suscipit consequatur vero atque,
+                vel
+                magnam placeat, reprehenderit
+                officiis
+                consectetur molestiae est
+                dignissimos
+                esse quia? Fuga distinctio ear</p>
+        </article>
+        <article>
+            <h1>Aboute me</h1>
+            <p>Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Nam obcaecati,
+                maiores voluptate suscipit fugiat
+                debitis incidunt ullam cumque
+                doloremque cum esse natus placeat
+                praesentium facere fuga alias ea
+                sunt
+                quod. Nulla aspernatur possimus
+                iure
+                suscipit consequatur vero atque,
+                vel
+                magnam placeat, reprehenderit
+                officiis
+                consectetur molestiae est
+                dignissimos
+                esse quia? Fuga distinctio ear</p>
+        </article>
+        <article>
+            <h1>Aboute me</h1>
+            <p>Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Nam obcaecati,
+                maiores voluptate suscipit fugiat
+                debitis incidunt ullam cumque
+                doloremque cum esse natus placeat
+                praesentium facere fuga alias ea
+                sunt
+                quod. Nulla aspernatur possimus
+                iure
+                suscipit consequatur vero atque,
+                vel
+                magnam placeat, reprehenderit
+                officiis
+                consectetur molestiae est
+                dignissimos
+                esse quia? Fuga distinctio ear</p>
+        </article>
+    </section>
+    <aside>
+        <h1>Ami Aside part</h1>
+        <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Nam obcaecati,
+            maiores voluptate suscipit fugiat
+            debitis incidunt ullam cumque
+            doloremque cum esse natus placeat
+            praesentium facere fuga alias ea sunt
+            quod. Nulla aspernatur possimus iure
+            suscipit consequatur vero atque, vel
+            magnam placeat, reprehenderit officiis
+            consectetur molestiae est dignissimos
+            esse quia? Fuga distinctio ear</p>
+
+    </aside>
+    <iframe src="https://www.youtube.com/"
+        frameborder="1">youtube</iframe>
+    <img src="test.jpg" alt="rectangleAndsqurel"
+        usemap="#test">
+    <map name="test">
+        <area shape="poly" target="_blank"
+            coords="478,525,303,230,133,525"
+            href="https://www.tutorialrepublic.com/html-reference/html5-tags.php"
+            alt="mojela">
+
+        <area shape="circle" coords="1110,373,177"
+            href="https://www.youtube.com/"
+            alt="youtube jau">
+
+        <area target="_blank" alt="" title=""
+            href="https://www.youtube.com/"
+            coords="128,784,482,1137"
+            shape="rect">
+    </map>
+
+    <br>
+    <br>
+    <br>
+    <img width="400px" src="gift.jpg"
+        usemap="#image">
+
+    <map name="image">
+        <area target="_blank" alt="" title=""
+            href="https://www.image-map.net/"
+            coords="192,238,252,672" shape="rect">
+    </map>
+    <hr>
+    <address>
+        Name:Pakunda islamia madrasa & Etim Khana
+        <br>
+        Gram:Pakunda <br>
+        Post:BAlipara <br>
+
+        Thana: Sonarga <br>
+        Jela: Narayoungonj
+    </address>
+
+    <hr>
+    <p>Ami <abbr
+            title="Cascatding style Sheet">CSS</abbr>
+        ke Use kore onke vallo web site
+        babate pari</p>
+    <p>ami <abbr
+            title="Pakunda Madrasay Pora Lekha Kori">PIHM</abbr>
+        pora lekha kori</p>
+    <hr>
+    <a target="_blank"
+        href="https://www.tutorialrepublic.com/html-reference/html5-tags.php">All
+        HTML 5</a>
+
+    <a href="https://www.youtube.com/">yuotube
+        Jaw</a>
+    <noscript>Show no mor Javascript</noscript>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Test The Dialog </title>
+</head>
+
+<body>
+    <div id="imgBox">
+        <img src="images/gift.jpg" alt="gift.jpg"
+            width="400px">
+        <button onclick="confrimDialog()">Delete
+            Image</button>
+    </div>
+    <dialog id="confrimDialog">
+        <p>images hes ben</p>
+        <button onclick="deleteImg()">Yes</button>
+        <button onclick="hideDialog()">No</button>
+    </dialog>
+    <script>
+        const dialog = document.getElementById('confrimDialog');
+        const img = document.getElementById('imgBox');
+
+        //show the Dialog
+        const confrimDialog = () => {
+            if (typeof dialog.showModal === "function") {
+                dialog.showModal();
+            }
+            else {
+                alert("youe browser hes not support dialog element ")
+            }
+        };
+
+        //delete the img
+        const deleteImg = () => {
+            img.parentNode.removeChild(img);
+            dialog.close();
+            document.write('image hes all redy ben')
+        }
+
+        //hide the dialog
+        const hideDialog = () => {
+            dialog.close();
+        }
+
+
+    </script>
+</body>
+
+</html>

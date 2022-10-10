@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>how in the dialog</title>
+</head>
+
+<body>
+
+    <img src="images/gift.jpg" alt="gift.jpg"
+        usemap="#giftImg">
+    <map name="giftImg">
+        <area target="_blank" alt="youtube jau"
+            title="YouTube niye jau"
+            href="https://www.youtube.com/"
+            coords="201,630,190,234,269,214,254,188,269,166,227,149,276,138,276,118,288,109,299,109,291,90,300,79,313,77,326,68,350,65,396,50,404,63,417,107,429,101,450,53,466,50,477,59,522,87,544,98,546,109,560,120,566,138,570,147,594,157,610,162,549,177,555,194,559,214,538,214,601,241,614,273,603,632,586,640,560,654,529,665,538,367,536,269,461,236,409,212,254,264,254,470,262,664"
+            shape="poly">
+    </map>
+
+    <pre>
+        ami 
+           vallo
+                asi 
+                    tomi 
+    </pre>
+
+    <hr>
+
+    <form
+        oninput="c.value=parseInt (a.value)+parseInt(b.value)">
+        <input type="range" name="" id="a"
+            value="50">
+        +
+        <input type="text" id="b" value="25">
+        =
+        <output name="c" for="a b"></output>
+    </form>
+
+    <hr>
+
+    <select name="" id="">
+
+        <optgroup label="a">
+            <option value="sani">sani</option>
+            <option value="babu">Babu</option>
+        </optgroup>
+        <optgroup label="B">
+            <option value="Raju">Raju</option>
+            <option value="saju">Saju</option>
+        </optgroup>
+    </select>
+
+    <hr>
+
+    <iframe src="allTag.html" frameborder="0"> <a
+            href="https://www.w3schools.com/"></a></iframe>
+
+    <hr>
+
+    <figure>
+        <img src="images/sani.jpg" alt="sani.jpg"
+            width="500px">
+        <figcaption>Ami sani Lorem ipsum dolor sit
+            amet consectetur adipisicing elit.
+            <br>
+            Odit esse deleniti maxime architecto
+            aliquam! Et unde labore quo
+            veritatis<br>
+            cum repellat corrupti dolore quis
+            illum aperiam. Quae natus nemo
+            voluptatibus.
+        </figcaption>
+    </figure>
+
+
+    <hr>
+    <form action="">
+        <fieldset>
+            <legend>dsdfsdf </legend>
+            <input type="radio" name="user"
+                id="a">
+            <label for="a">Mail</label>
+            <input type="radio" name="user"
+                id="b">
+            <label for="b">Femail</label>
+        </fieldset>
+    </form>
+
+
+    <hr>
+
+
+    <!-- <embed src="audio/audio-3.mp3"
+        type="audio/mp3"> -->
+
+    <hr>
+    <embed src="images/gift.jpg" type="image/jpg"
+        width="500px">
+
+    <hr>
+    <div id="img">
+        <img src="images/test.jpg" alt="test.jpg"
+            width="500px">
+        <br>
+        <button onclick="confrimDialog()">Delete
+            Img</button>
+    </div>
+    <dialog id="confrimDialog">
+        <button onclick="deleteImg()">Yes</button>
+        <button onclick="hidedialog()">No</button>
+    </dialog>
+    <script>
+        const img = document.getElementById('img');
+        const dialog = document.getElementById('confrimDialog');
+        const confrimDialog = () => {
+            if (typeof dialog.showModal === "function") {
+                dialog.showModal()
+            }
+            else {
+                alert('Not support the browsser in dialog element')
+            }
+        };
+
+        //delete images info
+
+        const deleteImg = () => {
+            img.parentNode.removeChild(img);
+            dialog.close();
+            document.write('images hes been')
+        };
+
+
+        //dialog hide
+        const hidedialog = () => {
+            dialog.close()
+        }
+
+    </script>
+</body>
+
+</html>
